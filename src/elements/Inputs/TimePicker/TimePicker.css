@@ -1,0 +1,13 @@
+.arrowUp {
+  transform: rotate(-90deg);
+  width: 0.9375rem;
+  height: 0.75rem;
+  cursor: pointer;
+}
+
+.arrowDown {
+  transform: rotate(90deg);
+  width: 0.9375rem;
+  height: 0.75rem;
+  cursor: pointer;
+}

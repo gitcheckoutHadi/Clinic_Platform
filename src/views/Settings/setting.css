@@ -1,0 +1,25 @@
+/* Improved Swipe animation styles */
+.swipe-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1),
+    opacity 0.5s ease-out;
+  will-change: transform, opacity;
+}
+
+.swipe-container.to-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.swipe-container.to-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.swipe-container {
+  transform: translateX(0);
+  opacity: 1;
+}

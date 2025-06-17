@@ -1,0 +1,8 @@
+.apexcharts-datalabel-label {
+  letter-spacing: 0.01563rem !important;
+  line-height: 1.25rem !important;
+}
+
+.apexcharts-datalabel-value {
+  line-height: 1.75rem !important;
+}

@@ -1,0 +1,19 @@
+.ChartFLex {
+  display: flex;
+  gap: 4rem;
+}
+
+.apexcharts-series {
+  border-radius: 5rem !important;
+  background: yellow;
+}
+.apexcharts-tooltip {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(209, 209, 209, 0.2) 100%
+  ) !important;
+  box-shadow: 0px 0px 4px 0px rgba(194, 203, 220, 0.2) inset !important;
+  backdrop-filter: blur(3px) !important;
+  border: none !important;
+}

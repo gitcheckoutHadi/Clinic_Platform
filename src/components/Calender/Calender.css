@@ -1,0 +1,262 @@
+/* .rbc-time-column:first-child {
+  border: none;
+  background: yellow;
+}
+.rbc-time-slot {
+  border: none;
+} */
+.rbc-calendar {
+  font-family: "Primary Font";
+  overflow-x: auto;
+}
+.rbc-timeslot-group {
+  border: none;
+}
+.rbc-time-view {
+  [dir="ltr"] & {
+    border-left: none;
+  }
+  [dir="rtl"] & {
+    border-right: none;
+  }
+}
+
+.rbc-time-content {
+  border: none;
+  /* background: yellow; */
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #f4f3f2;
+    width: 0.3rem;
+    border-radius: 0.625rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background for the track */
+    border-radius: 0.625rem;
+  }
+}
+
+.rbc-time-header-gutter {
+  border: none;
+  background: #fff;
+  margin-top: -1px;
+}
+
+.rbc-time-slot {
+  /* background: red; */
+  width: 9.9575rem;
+  min-height: 6rem !important; /* Ensures minimum height */
+  height: 6rem !important; /* Force the height */
+  max-height: 6rem !important; /* Prevent exceeding this height */
+  display: flex !important;
+  flex-direction: column !important;
+  /* margin-right: 0.2rem; */
+}
+
+.rbc-time-slot:first-child {
+  width: 100%;
+}
+.rbc-label {
+  color: var(--gray-dark, #a6a6a6);
+  text-align: center;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+  margin-top: 1.5rem;
+}
+.rbc-event {
+  background: transparent !important;
+  border: none !important;
+}
+.rbc-event-label {
+  display: none !important;
+}
+
+/* .rbc-event-content {
+  display: flex !important;
+  flex-direction: column !important;
+} */
+/* Ensure events in the same time slot are displayed in a column */
+.rbc-events-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch; /* Make events take up full width of the column */
+}
+
+.rbc-day-slot .rbc-event {
+  flex: 1 1 auto; /* Allow events to stretch proportionally */
+  margin: 2px 0; /* Add vertical spacing between events */
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Add rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Ensure the event title is centered and styled appropriately */
+.rbc-event-content {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+}
+/* .rbc-event:hover {
+  display: none !important;
+} */
+
+.rbc-event:focus,
+.rbc-day-slot .rbc-background-event:focus {
+  outline: none;
+}
+
+.rbc-row-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  -webkit-user-select: none;
+  /* z-index: 4; */
+}
+
+.rbc-time-view {
+  /* background: green !important;
+  fill: green !important; */
+}
+/* .rbc-day-slot {
+  background: transparent !important;
+} */
+
+.rbc-date-cell {
+  position: relative;
+  z-index: -1;
+}
+.rbc-row {
+  position: relative;
+  /* z-index: -1 !important; */
+}
+
+.event-info-modal {
+  border-radius: 4px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.rbc-time-header-content {
+  /* background: yellow !important; */
+  /* margin-left: 1.2rem; */
+  border: none !important;
+  [dir="rtl"] & {
+    margin-left: 1.2rem;
+    border-left: none;
+  }
+}
+.rbc-time-header-gutter {
+  [dir="rtl"] & {
+    /* background: yellow !important; */
+  }
+}
+.rbc-time-header {
+  border: none !important;
+}
+
+.rbc-header-today {
+  z-index: 10;
+}
+.rbc-row-bg {
+  /* background: red; */
+  display: none;
+}
+.rbc-day-bg + .rbc-day-bg {
+  margin-top: 3rem;
+}
+.rbc-time-header-content {
+  border: none !important;
+}
+.rbc-day-bg {
+  border: none !important;
+}
+.rbc-day-bg .rbc-today {
+  background: transparent !important;
+}
+.rbc-time-header-content {
+  border: none !important;
+}
+.rbc-row-content .rbc-row {
+  display: none;
+}
+
+.rbc-header.rbc-today {
+  background-color: transparent;
+}
+
+.rbc-header.rbc-today button {
+  background-color: transparent;
+  border: none; /* Remove button border if needed */
+  box-shadow: none; /* Remove button shadow if present */
+}
+.rbc-today .rbc-events-container {
+  background: rgba(171, 174, 229, 0.05);
+  width: 100%;
+}
+.rbc-time-column:first-child {
+  /* background: aqua; */
+  width: 5.9575rem;
+  justify-content: center;
+  /* padding-right: 4rem !important; */
+}
+.rbc-overflowing {
+  /* background: yellow; */
+  width: 5.9575rem;
+}
+.rbc-time-header-gutter {
+  /* background: purple; */
+  width: 5.9575rem !important;
+
+  min-width: 5.9575rem !important;
+}
+.rbc-time-header-content {
+  /* background: yellow !important; */
+  width: 100%;
+  display: flex;
+}
+
+.rbc-header {
+  /* border: none; */
+  min-width: 10.94rem !important;
+  height: 5.5rem;
+}
+
+/* $rbc-header-min: 7rem; // base min-width at 1500px
+$rbc-header-target: 10.94rem; // target min-width at 1536px
+$start: 1500;
+$end: 2100;
+$step: 10;
+
+// Convert rem to px for math (assuming base font-size 16px)
+$base-px: 16;
+$min-px: $rbc-header-min * $base-px; // = 112px
+$target-px: $rbc-header-target * $base-px; // = 175.04px
+
+// Difference for the scale
+$scale-range: $end - $start;
+$width-range: $target-px - $min-px;
+
+@for $i from $start through $end {
+  @if $i % $step == 0 {
+    $percent: ($i - $start) / $scale-range;
+    $current-width-px: $min-px + ($width-range * $percent);
+    $current-width-rem: $current-width-px / $base-px;
+
+    @media (max-width: #{$i}px) {
+      .rbc-header {
+        min-width: #{$current-width-rem}rem !important;
+      }
+    }
+  }
+} */
