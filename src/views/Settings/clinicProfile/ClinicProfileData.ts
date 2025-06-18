@@ -1,4 +1,4 @@
-import { FirstIVF } from "../../../constants/Pics/Pics";
+import { FirstIVF, LogoPic } from "../../../constants/Pics/Pics";
 
 interface ScheduleInterface {
   day: string;
@@ -22,70 +22,47 @@ export const scheduleDetails: ScheduleInterface[] = [
   },
 ];
 
-export const ClinicInfo = {
-  Id: "asdfghygfcdsxd",
-  Prf: FirstIVF,
-  Name: "FIRST IVF",
-  Email: "contact@firstivf.com",
-  PhoneNumber: "+971 987-6543",
-  WebURL: "sunshinefertility.com",
-  Address:
-    "123 Sheikh Zayed Road Al Wasl Building, Suite 405 Dubai, UAE PO Box 12345",
-  OpeningHours: {
-    Monday: ["08:00 AM - 11:00AM", "01:00 PM - 06:00PM"],
-    Tuesday: ["01:00 PM - 06:00PM"],
-    Wednesday: ["01:00 PM - 06:00PM"],
-    Thursday: ["01:00 PM - 06:00PM"],
-    Friday: ["01:00 PM - 06:00PM"],
-  },
-};
-
 export const CorrectClinicInfo = {
-  Id: "asdfghygfcdsxd",
-  Prf: FirstIVF,
-  Name: "FIRST IVF",
-  Email: "contact@firstivf.com",
-  PhoneNumber: "+971 987-6543",
-  WebURL: "sunshinefertility.com",
+  Id: "clinic_98765abcde",
+  Prf: LogoPic, // replace with actual image/logo import
+  Name: "Harmony Health Center",
+  Email: "info@harmonyhealth.com",
+  PhoneNumber: "+971 555-1234",
+  WebURL: "harmonyhealth.com",
   Address:
-    "123 Sheikh Zayed Road Al Wasl Building, Suite 405 Dubai, UAE PO Box 12345",
+    "456 Marina Boulevard, Office 210, Jumeirah Lakes Towers, Dubai, UAE, PO Box 67890",
   Availabilities: [
     {
       day: "Monday",
       TimeSlots: [
-        { start: "12:12 PM", end: "12:35 PM" },
-        { start: "3:12 PM", end: "5:35 PM" },
+        { start: "09:00 AM", end: "11:30 AM" },
+        { start: "01:00 PM", end: "03:00 PM" },
       ],
     },
     {
       day: "Tuesday",
       TimeSlots: [
-        { start: "12:12 PM", end: "12:35 PM" },
-        { start: "2:12 PM", end: "3:35 PM" },
-        { start: "3:45 PM", end: "5:35 PM" },
+        { start: "10:00 AM", end: "12:00 PM" },
+        { start: "02:30 PM", end: "04:00 PM" },
       ],
     },
     {
       day: "Wednesday",
       TimeSlots: [
-        { start: "12:12 PM", end: "12:35 PM" },
-        { start: "3:12 PM", end: "5:35 PM" },
+        { start: "08:30 AM", end: "11:00 AM" },
+        { start: "01:30 PM", end: "04:30 PM" },
       ],
     },
     {
-      day: "Thrusday",
+      day: "Thursday",
       TimeSlots: [
-        { start: "12:12 PM", end: "12:35 PM" },
-        { start: "2:12 PM", end: "3:35 PM" },
-        { start: "3:45 PM", end: "5:35 PM" },
+        { start: "09:15 AM", end: "11:45 AM" },
+        { start: "12:30 PM", end: "02:00 PM" },
       ],
     },
     {
       day: "Friday",
-      TimeSlots: [
-        { start: "12:12 PM", end: "12:35 PM" },
-        { start: "3:12 PM", end: "5:35 PM" },
-      ],
+      TimeSlots: [{ start: "10:00 AM", end: "12:30 PM" }],
     },
   ],
 };

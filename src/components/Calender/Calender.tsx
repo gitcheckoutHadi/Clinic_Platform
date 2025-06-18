@@ -17,7 +17,7 @@ import "moment/locale/ar";
 import "moment/locale/fr";
 import { myEventsList } from "./CalenderDummyData";
 import EventInfo from "./CustomEvent/EventInfo/EventInfo";
-import MappedIndexClickOutSide from "../../hooks/MapedIndexClickOutSide";
+
 import { useTranslation } from "react-i18next";
 import { MainCalenderContainer } from "./CalenderStyle";
 import CustomHeader from "./Header/Header";

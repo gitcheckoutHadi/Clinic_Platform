@@ -33,7 +33,7 @@ export const SearchInputContainer = styled.div<Styles>`
     bottom: 0;
     width: 0%;
     height: 2px;
-    background: #231d46;
+    background: #6a0dad;
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
   }
 

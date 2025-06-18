@@ -20,13 +20,13 @@ export const RadioLabel = styled.label<StyleThemeInterface>`
 
     /* background: ${(props) =>
       props.bgcolor ||
-      "linear-gradient(to bottom,rgb(98, 104, 112), #231d46)"}; */
+      "linear-gradient(to bottom,rgb(98, 104, 112), #6A0DAD)"}; */
   }
   &:hover:before {
     /* background-color:#35e07d; */
     /* border: .05em solid #5DD3B3; */
-    background: linear-gradient(to bottom, rgb(192, 196, 202), #231d4680);
-    border: 0.05em solid #231d4680;
+    background: #d6bcfa40;
+    border: 0.05em solid #d6bcfa40;
     /*   background-color:red; */
   }
 `;
@@ -46,13 +46,13 @@ export const SeletectOptinToogle = styled.input`
   transform: translate(-50%, -50%);
 
   &:checked + ${RadioLabel}::before {
-    background: #231d46;
+    background: #6a0dad;
 
     display: flex;
     justify-content: center;
     align-items: center;
     /* color: #fff;; */
-    border: 0.05em solid #231d46;
+    border: 0.05em solid #6a0dad;
   }
 `;
 

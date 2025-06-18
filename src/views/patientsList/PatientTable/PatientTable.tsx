@@ -2,10 +2,6 @@ import React, { useEffect, useState } from "react";
 import PopUp from "../../../components/PupUps/PopUp/PopUp";
 import { SvgFilterIcon } from "../../../elements/Icons";
 import Table from "../../../components/Table/Table";
-import {
-  DummyData,
-  HeaderColumns,
-} from "../../../components/Table/TableDummyData";
 import GeneralFilterPopUp from "../../../components/PupUps/FilterPopUp/FilterPopUp";
 import { handleCheckStoreValue } from "../../../utils/ObjectFuctions";
 import {
@@ -21,29 +17,23 @@ const PatientTable = () => {
   const [Show, setShow] = useState<boolean>(true);
   const [popUpText, setPopUpText] = useState("");
   const IndexShows = [1, 3];
-  const [IDValue, setIDValue] = useState<string>("");
-  const [CurrentStatusValue, setCurrentStatusValue] = useState<string>("");
+  const [NationalityVal, setNationalityVal] = useState<string>("");
+  const [PrimaryPhysicianValue, setPrimaryPhysicianValue] =
+    useState<string>("");
   // You can make this a prop too
 
   // Filter DummyData based on selected values
-  const filteredData = DummyData.filter((item) => {
-    const matchesID = IDValue ? item.ID === IDValue : true;
-    const matchesCurrentStatus = CurrentStatusValue
-      ? item.CurrentStatus === CurrentStatusValue
-      : true;
-    return matchesID && matchesCurrentStatus; // Both filters are applied simultaneously
-  });
 
   const handleTagClick = (index: number) => {
     if (index === 0) {
       setPopUpText("hadi");
     } else if (index === 1) {
-      setPopUpText("fadi");
+      setPopUpText("Soul");
     }
   };
   const handleRefresh = () => {
-    setIDValue(""); // Reset IDValue
-    setCurrentStatusValue(""); // Reset CurrentStatusValue
+    setNationalityVal(""); // Reset NationalityVal
+    setPrimaryPhysicianValue(""); // Reset PrimaryPhysicianValue
   };
 
   const handleDelete = async (sourceId: string) => {
@@ -95,42 +85,59 @@ const PatientTable = () => {
   }));
 
   console.log(formattedData);
-
+  const filteredData = formattedData.filter((item) => {
+    const matchesID = NationalityVal
+      ? item.Nationality === NationalityVal
+      : true;
+    const matchesPrimaryPhysician = PrimaryPhysicianValue
+      ? item.PrimaryPhysician === PrimaryPhysicianValue
+      : true;
+    return matchesID && matchesPrimaryPhysician; // Both filters are applied simultaneously
+  });
   return (
     <div>
       <Table
         TableTitle="patients.Patient’s Details"
         columns={PatientHeaderTableData}
-        rows={formattedData} // Pass the filtered data here
+        rows={filteredData} // Pass the filtered data here
         DeleteFunction={handleDelete}
         AddButtonText="patients.Add Patient"
         SecondArrayText="File:"
         ExcelTableName="Patient"
         ResponsiveColumns={PatientResponsiveHeaderTableData}
         Action={DummyActions()}
+        onFilterIndexClick={handleTagClick}
+        IndexShows={[2, 7]}
+        RefreshClick={handleRefresh}
+        TextFilterShows={[
+          { value: NationalityVal, setValue: setNationalityVal },
+          { value: PrimaryPhysicianValue, setValue: setPrimaryPhysicianValue },
+        ]}
       />
 
       {popUpText === "hadi" && (
         <GeneralFilterPopUp
           title={"Class"}
-          ContextValue={IDValue}
-          RenderedValueKey="ID"
+          ContextValue={NationalityVal}
+          RenderedValueKey="Nationality"
           show={Show}
           setShow={setShow}
-          data={DummyData}
-          RadioChanges={(e) => handleCheckStoreValue(e, setIDValue)}
+          data={formattedData}
+          RadioChanges={(e) => handleCheckStoreValue(e, setNationalityVal)}
           closeClick={() => setPopUpText("")}
         />
       )}
-      {popUpText === "fadi" && (
+      {popUpText === "Soul" && (
         <GeneralFilterPopUp
           title={"Current Status"}
-          ContextValue={CurrentStatusValue}
-          RenderedValueKey="CurrentStatus"
+          ContextValue={PrimaryPhysicianValue}
+          RenderedValueKey="PrimaryPhysician"
           show={Show}
           setShow={setShow}
-          data={DummyData}
-          RadioChanges={(e) => handleCheckStoreValue(e, setCurrentStatusValue)}
+          data={formattedData}
+          RadioChanges={(e) =>
+            handleCheckStoreValue(e, setPrimaryPhysicianValue)
+          }
           closeClick={() => setPopUpText("")}
         />
       )}

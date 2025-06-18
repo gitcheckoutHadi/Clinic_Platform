@@ -17,6 +17,10 @@ import { TableHeaderDataInterface } from "../../../Interface/TableInterface/Tabl
 import FilterTag from "./FilterTag/FilterTag";
 import { useTranslation } from "react-i18next";
 import TableButtons from "../../../elements/Buttons/TableButtons/TableButtons";
+type InterfaceTextFilterShow = {
+  value: string;
+  setValue: React.Dispatch<React.SetStateAction<string>>;
+};
 
 // Interface for component props
 interface FiltersAndActionsInterface {
@@ -39,7 +43,7 @@ interface FiltersAndActionsInterface {
    * Optional list of index keys with labels to display as filter tags.
    */
   IndexKeyShows?: TableHeaderDataInterface[];
-
+  TextFilterShows?: InterfaceTextFilterShow[];
   /**
    * Optional function to handle clicks on filter tags.
    *
@@ -54,6 +58,8 @@ const FiltersAndActions = ({
   AddText,
   ExcelTableName,
   IndexKeyShows,
+  TextFilterShows,
+
   onTagClick,
 }: FiltersAndActionsInterface) => {
   const navigate = useNavigate();
@@ -77,8 +83,10 @@ const FiltersAndActions = ({
           IndexKeyShows.map((tag, index) => (
             <FilterTag
               key={index}
-              text={t(tag.label)}
+              text={`${t(tag.label)}`}
+              filteredText={TextFilterShows?.[index].value ?? ""}
               onClickFunction={() => onTagClick && onTagClick(index)} // Trigger onTagClick if defined
+              deleteClick={() => TextFilterShows?.[index].setValue("")}
             />
           ))}
       </FiltersAndActionsButtonsPlace>

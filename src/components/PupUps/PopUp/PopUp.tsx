@@ -94,7 +94,7 @@ const PopUp = ({
                 />
               </PopUpPaBoxHeaderTitle>
               <ClosePopUp onClick={handleClose}>
-                <SvgCloseIcon />
+                <SvgCloseIcon className="IconClose" />
               </ClosePopUp>
             </PopUpPaBoxHeader>
             <PopUpPaBoxContent minheight={minheight}>

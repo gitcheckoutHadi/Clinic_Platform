@@ -132,7 +132,9 @@ export const ClosePopUp = styled.div`
   cursor: pointer;
   padding: 0.2rem;
   transition: transform 0.2s ease, opacity 0.2s ease;
-
+  .IconClose {
+    fill: #6a0dad;
+  }
   &:hover {
     transform: scale(1.1);
     opacity: 0.8;

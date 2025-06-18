@@ -9,6 +9,8 @@ export interface tagButtonInterface {
   backgroundcolor?: string;
   color?: string;
   border?: boolean;
+  filteredText?: string;
+  deleteClick?: () => void;
 }
 export interface tagButtonStyleInterface {
   width?: string;
@@ -16,4 +18,5 @@ export interface tagButtonStyleInterface {
   bgcolor?: string;
   color?: string;
   border?: string;
+  filteredText?: string;
 }

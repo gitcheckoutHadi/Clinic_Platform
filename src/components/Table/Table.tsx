@@ -15,6 +15,11 @@ import UseResponsive from "../../hooks/useResponsive";
 /**
  * Props interface for the Table component.
  */
+type InterfaceTextFilterShow = {
+  value: string;
+  setValue: React.Dispatch<React.SetStateAction<string>>;
+};
+
 interface TableInterface {
   TableTitle: string; // Title of the table
   DeleteFunction?: (sourceId: string) => void; // Optional function to handle row deletion
@@ -40,6 +45,7 @@ interface TableInterface {
   PopUpContentWidth?: string;
   IdLoading?: any;
   ResponsiveColumns?: TableHeaderDataInterface[];
+  TextFilterShows?: InterfaceTextFilterShow[];
 }
 
 const Table = ({
@@ -67,6 +73,7 @@ const Table = ({
   PopUpContentWidth,
   IdLoading,
   ResponsiveColumns,
+  TextFilterShows,
 }: TableInterface) => {
   const { t } = useTranslation();
   const breakpoint = 800; // You can make this a prop too
@@ -221,6 +228,7 @@ const Table = ({
         ExcelTableName={ExcelTableName}
         IndexKeyShows={DataKeys}
         onTagClick={onFilterIndexClick}
+        TextFilterShows={TextFilterShows}
       />
       <ScrollLeftAndRight
         content={

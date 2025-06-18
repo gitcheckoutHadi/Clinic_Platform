@@ -39,8 +39,9 @@ export const ClinicProfileView = styled.div`
   gap: 1.25rem;
   align-self: stretch;
   border-radius: 0.625rem;
-  background: rgba(244, 243, 242, 0.5);
+  background: #d6bcfa40;
   img {
+    height: 7rem;
   }
 `;
 
