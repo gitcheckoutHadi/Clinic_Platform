@@ -99,11 +99,11 @@ const TableHeader = ({
               letter_spacing="0.00625rem"
               fontWeight="700"
               lineHeight="1.25rem"
-              color="#898DDA"
+              color="#7E22CE"
             />
             <CellCust>
               {showExpand && colIndexInOriginal === sortColumn && (
-                <span style={{ marginLeft: "0.4rem", color: "#898DDA" }}>
+                <span style={{ marginLeft: "0.4rem", color: "#7E22CE" }}>
                   {sortOrder === "asc" ? <SvgAsc /> : <SvgDes />}
                 </span>
               )}

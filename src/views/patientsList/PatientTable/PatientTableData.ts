@@ -2,12 +2,12 @@ import { TableHeaderDataInterface } from "../../../Interface/TableInterface/Tabl
 
 export const PatientHeaderTableData: TableHeaderDataInterface[] = [
   { id: "Name", label: "Patient Name" },
-  { id: "DateOfBirth", label: "table.Date Of Birth" },
+  { id: "DateOfBirth", label: "Date Of Birth" },
   { id: "Nationality", label: "Nationality" },
-  { id: "PhoneNumber", label: "table.Phone Number" },
-  { id: "EmailAddress", label: "table.Email Address" },
-  { id: "Cycles", label: "table.Cycles" },
-  { id: "DueAmount", label: "table.Due Amount" },
+  { id: "PhoneNumber", label: "Phone Number" },
+  { id: "EmailAddress", label: "Email Address" },
+
+  { id: "DueAmount", label: "Due Amount" },
 ];
 
 export const PatientResponsiveHeaderTableData: TableHeaderDataInterface[] = [
@@ -25,7 +25,7 @@ export const PatientTableData = [
     Nationality: "USA",
     PhoneNumber: "+1 123-456-7890",
     EmailAddress: "sara@example.com",
-    Cycles: "3",
+
     DueAmount: "150.75",
   },
   {
@@ -36,7 +36,7 @@ export const PatientTableData = [
     Nationality: "Canada",
     PhoneNumber: "+1 987-654-3210",
     EmailAddress: "samah@example.com",
-    Cycles: "5",
+
     DueAmount: "200.0",
   },
   {
@@ -47,7 +47,7 @@ export const PatientTableData = [
     Nationality: "Pakistan",
     PhoneNumber: "+92 300-1234567",
     EmailAddress: "amina@example.com",
-    Cycles: "2",
+
     DueAmount: "75.5",
   },
   {
@@ -58,7 +58,7 @@ export const PatientTableData = [
     Nationality: "Mexico",
     PhoneNumber: "+52 55-9876-5432",
     EmailAddress: "afaf@example.com",
-    Cycles: "4",
+
     DueAmount: "300.0",
   },
   {
@@ -69,7 +69,7 @@ export const PatientTableData = [
     Nationality: "Ireland",
     PhoneNumber: "+353 85-678-9102",
     EmailAddress: "layla@example.com",
-    Cycles: "1",
+
     DueAmount: "50.0",
   },
   {
@@ -80,7 +80,7 @@ export const PatientTableData = [
     Nationality: "China",
     PhoneNumber: "+86 139-4567-8901",
     EmailAddress: "mariam@example.com",
-    Cycles: "6",
+
     DueAmount: "500.0",
   },
   {
@@ -91,7 +91,7 @@ export const PatientTableData = [
     Nationality: "UAE",
     PhoneNumber: "+971 50-987-6543",
     EmailAddress: "fatima@example.com",
-    Cycles: "3",
+
     DueAmount: "275.25",
   },
   {
@@ -102,7 +102,7 @@ export const PatientTableData = [
     Nationality: "Brazil",
     PhoneNumber: "+55 21-3456-7890",
     EmailAddress: "hana@example.com",
-    Cycles: "4",
+
     DueAmount: "125.0",
   },
   {
@@ -113,7 +113,7 @@ export const PatientTableData = [
     Nationality: "Germany",
     PhoneNumber: "+49 170-123-4567",
     EmailAddress: "noor@example.com",
-    Cycles: "2",
+
     DueAmount: "180.0",
   },
   {
@@ -124,7 +124,7 @@ export const PatientTableData = [
     Nationality: "Egypt",
     PhoneNumber: "+20 100-234-5678",
     EmailAddress: "rania@example.com",
-    Cycles: "5",
+
     DueAmount: "220.0",
   },
   {

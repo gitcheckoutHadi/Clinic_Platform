@@ -4,7 +4,7 @@ export const TableHeaderRow = styled.div`
   display: flex;
   justify-content: space-between;
   border-radius: 0.3125rem;
-  background: rgba(171, 174, 229, 0.1);
+  background: #d6bcfa;
   min-width: 100%;
   width: fit-content;
   position: relative;

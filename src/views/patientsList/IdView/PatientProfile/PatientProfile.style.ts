@@ -43,7 +43,7 @@ export const ColoredRowInfoPatientProfileContainer = styled.div`
   justify-content: space-between;
   padding: 1.25rem;
   border-radius: 0.625rem;
-  background: rgba(171, 174, 229, 0.1);
+  background: rgba(214, 188, 250, 0.25);
   align-self: stretch;
 `;
 

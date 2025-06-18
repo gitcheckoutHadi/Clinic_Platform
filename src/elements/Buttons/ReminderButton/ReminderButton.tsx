@@ -36,9 +36,9 @@ const ReminderButton = ({
         cursor="pointer"
         color="inherit"
       />
-      {/* <CalenderToolBarGapedRow>
+      <CalenderToolBarGapedRow>
         <Icon className="icon-style" />
-      </CalenderToolBarGapedRow> */}
+      </CalenderToolBarGapedRow>
     </ReminderButtonContainer>
   );
 };

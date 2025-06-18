@@ -32,7 +32,7 @@ export const SliderAbsContainerCells = styled.div`
   padding: 0.5rem 0.75rem;
 
   &:hover {
-    background: var(--Main-purple, #231d46);
+    background: var(--Main-purple, #6a0dad);
     color: #fff !important;
   }
   &:first-child {

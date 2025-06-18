@@ -27,7 +27,7 @@ export const MainIntegrationCardContainer = styled.div`
   align-items: flex-end;
   flex: 1;
   border-radius: 0.625rem;
-  background: rgba(244, 243, 242, 0.5);
+  background: rgba(214, 188, 250, 0.25);
   min-width: 14rem !important;
   /* background: green; */
   @media (max-width: ${breakpoints.tablets}) {

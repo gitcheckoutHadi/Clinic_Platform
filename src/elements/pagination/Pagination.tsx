@@ -47,7 +47,7 @@ const Pagination: FC<PaginationProps> = ({
         style={{
           opacity: currentPage === 1 ? 0.4 : 1, // Dim button when on the first page
         }}
-        bordercolor="#231d46"
+        bordercolor="#6a0dad"
       >
         <SvgPaginatorArrow
           style={{
@@ -55,7 +55,7 @@ const Pagination: FC<PaginationProps> = ({
               TransformDirection() === "ltr"
                 ? "rotate(90deg)"
                 : "rotate(-90deg)",
-            stroke: "#231d46c5",
+            stroke: "#6a0dad",
           }}
         />
       </PaginationBox>
@@ -79,7 +79,7 @@ const Pagination: FC<PaginationProps> = ({
 
       {/* Next Page Button */}
       <PaginationBox
-        bordercolor="#231d46"
+        bordercolor="#6a0dad"
         cursor={currentPage === totalPages ? "no-drop" : "pointer"} // Disable cursor for the last page
         onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))} // Navigate to the next page
         style={{
@@ -92,7 +92,7 @@ const Pagination: FC<PaginationProps> = ({
               TransformDirection() === "ltr"
                 ? "rotate(-90deg)"
                 : "rotate(90deg)",
-            stroke: "#231d46",
+            stroke: "#6a0dad",
           }}
         />
       </PaginationBox>

@@ -17,7 +17,6 @@ const ClinicColoredBox = ({ title, value, titleBgColor }: ClinicColoredBox) => {
         <MediumTypography text={title} fontWeight="700" />
       </ClinicColoredTitle>
       <MediumTypography
-        color="#000"
         fontSize="2.25rem"
         text={value}
         fontWeight="700"

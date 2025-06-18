@@ -15,7 +15,7 @@ export const ReminderButtonContainer = styled.button<Style>`
   height: 2.5rem;
   color: #fff;
   transition: all 0.3s ease-in-out;
-  background-color: #231d46;
+  background-color: #6a0dad;
   border-radius: ${(props) => props.borderRadius || "6.25rem"};
   width: ${(props) => props.width || "fit-content"};
   justify-content: center;
@@ -26,14 +26,14 @@ export const ReminderButtonContainer = styled.button<Style>`
   }
 
   &:hover {
-    color: #231d46;
-    border: 1px solid #231d46;
+    color: #6a0dad;
+    border: 1px solid #6a0dad;
     background-color: #fff;
 
     .icon-style {
       animation: vibrate 0.8s linear infinite; /* Slower vibration effect */
-      fill: #231d46;
-      stroke: #231d46;
+      fill: #6a0dad;
+      stroke: #6a0dad;
     }
   }
 

@@ -26,7 +26,7 @@ export const PageButton = styled.button<{
   height: 1rem; */
   border-radius: 0.3125rem;
   /* border: ${({ active, borderColor }) =>
-    active ? "1px solid #231d46" : `1px solid ${borderColor}`}; */
+    active ? "1px solid #6a0dad" : `1px solid ${borderColor}`}; */
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -35,10 +35,10 @@ export const PageButton = styled.button<{
   color: ${({ active, color }) => (active ? color : "#A6A6A6")};
   border: 1px solid transparent;
 
-  /* background: ${({ active }) => (active ? "#231d46" : "transparent")}; */
+  /* background: ${({ active }) => (active ? "#6a0dad" : "transparent")}; */
 
   &:hover {
-    border: 1px solid #231d46;
+    border: 1px solid #6a0dad;
   }
 `;
 
@@ -69,6 +69,6 @@ export const PaginationBox = styled.div<StyleThemeInterface>`
   border-radius: 0.3125rem;
   border: 1px solid transparent;
   &:hover {
-    border: 1px solid #231d46;
+    border: 1px solid #6a0dad;
   }
 `;

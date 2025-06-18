@@ -14,18 +14,18 @@ const ButtonCancelStyle = styled.button<Styles>`
   align-items: center;
   gap: 0.5rem;
   border-radius: ${(props) => props.borderRadius || " 6.25rem"};
-  border: 1px solid #231d46;
+  border: 1px solid #6a0dad;
   background: white;
-  color: #231d46;
+  color: #6a0dad;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   /* border-radius: 6.25rem; */
   &:hover {
-    /* background: #231d46;
+    /* background: #6a0dad;
     color: white; */
     transform: scale(1.05);
-    box-shadow: 0px 4px 10px rgba(#231d4649);
+    box-shadow: 0px 4px 10px rgba(#6a0dad49);
   }
 
   &:active {

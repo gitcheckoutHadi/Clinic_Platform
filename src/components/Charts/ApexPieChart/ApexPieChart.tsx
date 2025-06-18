@@ -27,6 +27,9 @@ const ApexPieChart: React.FC<CircularProgressProps> = ({ progress }) => {
             margin: 15,
             size: "70%",
           },
+          track: {
+            background: "#D6BCFA40", // Unfilled stroke color
+          },
           dataLabels: {
             name: {
               fontSize: " 0.875rem",
@@ -47,7 +50,7 @@ const ApexPieChart: React.FC<CircularProgressProps> = ({ progress }) => {
       },
       fill: {
         type: "solid", // Use solid fill type
-        colors: ["#231D46"], // Fill with desired color
+        colors: ["#6a0dad"], // Fill with desired color
       },
       stroke: {
         lineCap: "round",

@@ -8,7 +8,7 @@ export const ClinicColoredBoxMainCont = styled.div`
   gap: 1.25rem;
   flex: 1 0 0;
   border-radius: 0.625rem;
-  background: rgba(244, 243, 242, 0.5);
+  background: rgba(214, 188, 250, 0.25);
 `;
 
 export const ClinicColoredTitle = styled.div<{ background?: string }>`
