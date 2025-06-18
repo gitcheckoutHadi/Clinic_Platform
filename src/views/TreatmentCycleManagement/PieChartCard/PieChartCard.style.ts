@@ -16,10 +16,10 @@ export const PieChartCardMainContainer = styled.div`
   align-items: center;
 
   &:dir(ltr) {
-    border-right: 2px solid #50535530;
+    border-right: 2px solid #d6bcfa40;
   }
   &:dir(rtl) {
-    border-left: 2px solid #50535530;
+    border-left: 2px solid #d6bcfa40;
   }
   &:last-child {
     border: none !important;

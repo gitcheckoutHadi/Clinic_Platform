@@ -16,10 +16,10 @@ export const TableBodyRow = styled.div`
   /* gap: 1rem; */
   &:nth-child(even) {
     border-radius: 0.3125rem;
-    background: rgba(244, 243, 242, 0.5);
+    background: rgba(214, 188, 250, 0.25);
   }
   &:hover {
-    background: rgba(35, 29, 70, 0.05);
+    background: rgba(214, 188, 250, 0.53);
 
     transition: background 0.3s ease;
   }

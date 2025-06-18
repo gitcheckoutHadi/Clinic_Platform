@@ -28,7 +28,7 @@ const PieChartCard = ({ data }: PieChartCardInterface) => {
           <PieChartCarTopContainer>
             <PieChartCarTitle>
               <Typography
-                text={t(`treatmentCycle.${item.title}`)}
+                text={item.title}
                 fontSize="1.125rem"
                 fontWeight="700"
                 lineHeight="1.625rem"

@@ -44,7 +44,7 @@ const TableSlicer = ({ slicerData }: TableSlicerInterface) => {
         lineHeight="1.25rem"
         letter_spacing="0.01563rem"
         text={"/ Page"}
-        color="#505355"
+        color="#460d6e"
       />
       <ChevronContainer isrotateddetected={ShowAbs}>
         <SvgChevronDown />

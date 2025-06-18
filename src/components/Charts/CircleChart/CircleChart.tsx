@@ -61,8 +61,8 @@ const CirclePieChart: React.FC<SemiCircularProgressProps> = ({
   progress,
   size = 120,
   strokeWidth = 10,
-  color = "#8C8CFF",
-  trackColor = "#F1F1F1",
+  color = "#6a0dad",
+  trackColor = "#fff",
 }) => {
   const radius = (size - strokeWidth) / 2; // Radius of the semi-circle
   const [ProgressTime, setProgressTime] = useState(0);

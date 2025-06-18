@@ -9,11 +9,11 @@ export const AbsoluteTableActionsContainer = styled.div`
   flex-direction: column;
   border-radius: 0.9375rem;
   border-radius: 0.9375rem;
-  background: var(--Ektolife-Web-App-white, #fff);
+
   box-shadow: 0px 4px 14px 0px rgba(185, 185, 185, 0.25);
   cursor: pointer;
   border-radius: 0.625rem;
-  background: var(--dark-blue, #231d46);
+  background: #6a0dad;
   border-radius: 0.625rem;
   &:dir(ltr) {
     right: 2rem;
@@ -46,20 +46,20 @@ export const AbsoluteTableActionsCells = styled.div<StyleInterface>`
   }
 
   .icon-style {
-    fill: ${(props) => (props.fill ? "#FFF" : "#231D46")};
-    stroke: ${(props) => (props.stroke ? "#FFF" : "#231D46")};
+    fill: ${(props) => (props.fill ? "#FFF" : "#6A0DAD")};
+    stroke: ${(props) => (props.stroke ? "#FFF" : "#6A0DAD")};
     transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
   }
 
   &:hover {
     background: #fff;
-    color: #231d46 !important;
+    color: #6a0dad !important;
 
     .icon-style {
       fill: ${(props) =>
-        props.hoverFill ? "#231D46" : props.fill ? "#231D46" : "#FFF"};
+        props.hoverFill ? "#6A0DAD" : props.fill ? "#6A0DAD" : "#FFF"};
       stroke: ${(props) =>
-        props.hoverStroke ? "#231D46" : props.stroke ? "#231D46" : "#FFF"};
+        props.hoverStroke ? "#6A0DAD" : props.stroke ? "#6A0DAD" : "#FFF"};
       animation: scale-bold 0.6s ease-in-out infinite; /* Add animation here */
     }
   }

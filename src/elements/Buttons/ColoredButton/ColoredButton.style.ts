@@ -13,7 +13,7 @@ export const ColoredButtonContainer = styled.button<Style>`
   padding: 0.625rem 1.25rem;
   color: #fff;
   transition: all 0.3s ease-in-out;
-  background-color: #231d46;
+  background-color: #6a0dad;
   border-radius: ${(props) => props.borderRadius || "0.325rem"};
 
   .icon-style {
@@ -24,14 +24,14 @@ export const ColoredButtonContainer = styled.button<Style>`
   }
 
   &:hover {
-    color: #231d46;
-    border: 1px solid #231d46;
+    color: #6a0dad;
+    border: 1px solid #6a0dad;
     background-color: #fff;
 
     .icon-style {
       animation: scale-bold 0.6s ease-in-out infinite; /* Scale and bold animation */
-      fill: #231d46;
-      stroke: #231d46;
+      fill: #6a0dad;
+      stroke: #6a0dad;
     }
   }
 

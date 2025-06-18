@@ -8,12 +8,12 @@ export const TagHolder = styled.div<tagButtonStyleInterface>`
   align-items: center;
   gap: 0.5rem;
 
-  color: ${(props) => (props.color ? props.color : "#231d46")};
+  color: ${(props) => (props.color ? props.color : "#6a0dad")};
   border-radius: 6.25rem;
   border: ${(props) =>
     props.border === "false"
       ? "none"
-      : " 1px solid var(--Main-purple, #231d46)"};
+      : " 1px solid var(--Main-purple, #6a0dad)"};
   min-width: ${(props) => (props.width ? props.width : "4rem")};
   cursor: pointer;
   height: ${(props) => (props.height ? props.height : "2.5rem")};
@@ -22,7 +22,7 @@ export const TagHolder = styled.div<tagButtonStyleInterface>`
     props.bgcolor ? props.bgcolor : "transparent"};
   &:hover {
     background-color: ${(props) =>
-      props.color ? props.color : "var(--Main-purple, #231d46)"};
+      props.color ? props.color : "var(--Main-purple, #6a0dad)"};
     color: ${(props) => (props.bgcolor ? props.bgcolor : "white")};
     border-color: transparent; // Hides the border color
   }

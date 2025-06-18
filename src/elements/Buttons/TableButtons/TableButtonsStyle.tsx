@@ -40,11 +40,11 @@ export const TableButtonsMainContainer = styled.div`
   /* animation: ${fadeIn} 0.4s ease-in-out */
 
   &:hover {
-    color: #231d46;
+    color: #6a0dad;
   }
 
   &:hover ${TableLineContainer} {
-    background: #231d46;
+    background: #6a0dad;
     animation: ${lineExpand} 0.3s ease-in-out forwards;
   }
 `;

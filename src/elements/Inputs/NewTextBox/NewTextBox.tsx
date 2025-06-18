@@ -60,11 +60,11 @@ const NewTextBox = ({
         disabled={disabled}
         background={inputBgColor}
         type={type}
-        // onBlur={() => {
-        //   if (value.trim() === "" && setErrorValue && mandatory) {
-        //     setErrorValue("This field is required"); // Set error if the field is empty on blur
-        //   }
-        // }}
+        onBlur={() => {
+          if (value.trim() === "" && setErrorValue && mandatory) {
+            setErrorValue("This field is required"); // Set error if the field is empty on blur
+          }
+        }}
       />
     </NewTBMaiContainer>
   );
