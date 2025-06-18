@@ -43,7 +43,7 @@ const AppointmentHistory = ({
         showExpand={showExpand}
         setShowExpand={setShowExpand}
         ExpandClick={ExpandClick}
-        flexWidths={[1, 0.6, 0.5, 0.6, 1.1]}
+        // flexWidths={[1, 0.6, 0.5, 0.6, 1.1]}
         ExcelTableName="AppointmentHistory"
       />
     </PageFlex>

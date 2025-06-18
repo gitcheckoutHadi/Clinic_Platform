@@ -145,7 +145,7 @@ const DonutChartWithIcons: React.FC<DonutChartWithIconsInterface> = ({
           lineHeight="120%"
         />
         <MediumTypography
-          text={"Daily total gametes"}
+          text={"Total Gametes"}
           fontWeight="700"
           whiteSpace="nowrap"
         />

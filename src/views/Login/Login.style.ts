@@ -37,7 +37,7 @@ export const QuarterLoginContainer = styled.div`
     flex: 1;
     flex-direction: column;
     z-index: 0;
-    padding: 10.4vh 4.4vw;
+    padding: 30vh 4.4vw;
     gap: 7.25rem;
     background: #6a0dad;
     .styled-SVG {
@@ -55,10 +55,10 @@ export const QuarterLoginContainer = styled.div`
     .styled-text span {
       color: #fff;
       font-family: "Rossanova";
-      font-size: 3rem;
+      font-size: 5rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 3.75rem; /* 125% */
+      line-height: 5.75rem; /* 125% */
       font-family: "Rossanova";
     }
     @media (max-width: calc(${breakpoints.small} + 80px)) {
@@ -79,8 +79,15 @@ export const CupLoginLogo = styled.div`
 
 export const AbsoluteLoginLogo = styled.div`
   position: absolute;
-  right: 1.5rem;
-  bottom: 1.5rem;
+  right: -2rem;
+  bottom: -2rem;
+  .logoImgS {
+    height: 150px;
+    /* max-height: 20px; */
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
   svg {
     animation: ${float} 2s infinite ease-in-out;
   }

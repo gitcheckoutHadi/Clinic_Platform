@@ -9,6 +9,7 @@ import { useRecoilValue } from "recoil";
 import { MainColorSelector } from "../../recoil/ThemeSelectors";
 import { SvgEktoLifeLogoIcon, SvgLogo } from "../../elements/Icons";
 import ProfileNotification from "./ProfileNotification/ProfileNotification";
+import { LogoPic } from "../../constants/Pics/Pics";
 
 const PageHeader = () => {
   const { secondaryColor } = useRecoilValue(MainColorSelector);
@@ -34,7 +35,7 @@ const PageHeader = () => {
         </RelativeLogo>
       ) : ( */}
       <PageHeaderStyle>
-        <SvgEktoLifeLogoIcon fill="#231D46" />
+        <img src={LogoPic} alt="LogoPic" className="logoImgS" />
         <RightHeaderStyle>
           <ProfileNotification />
         </RightHeaderStyle>

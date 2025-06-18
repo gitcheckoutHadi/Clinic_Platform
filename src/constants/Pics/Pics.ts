@@ -9,6 +9,7 @@ const org = require("../../assets/Images/org.png");
 const firstIvfC1 = require("../../assets/Images/firstIvfC1.png");
 const firstIvfC2 = require("../../assets/Images/firstIvfC2.png");
 const firstIvfC3 = require("../../assets/Images/firstIvfC3.png");
+const LogoPic = require("../../assets/Images/logo.png");
 export {
   Prf1,
   MainPrf,
@@ -17,6 +18,7 @@ export {
   ManImg,
   MadonaImg,
   FirstIVF,
+  LogoPic,
   org,
   firstIvfC1,
   firstIvfC2,

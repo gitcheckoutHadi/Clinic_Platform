@@ -139,7 +139,7 @@ export const Tooltip = styled.div<{ isVisible: boolean; boxShadow?: string }>`
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.2) 0%,
+    rgba(214, 188, 250, 0.25) 0%,
     rgba(209, 209, 209, 0.2) 100%
   );
   box-shadow: 0px 0px 4px 0px rgba(194, 203, 220, 0.2) inset;

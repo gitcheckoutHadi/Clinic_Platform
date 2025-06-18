@@ -131,7 +131,7 @@ const TableBody = ({
                   // minWidth={columnWidths[colIndexInOriginal] || "9rem"}
                   // EyeShow={EyeShow}
                   flexWidth={row.flex || 1}
-                  minWidth={row.minWidth || "8rem"}
+                  // minWidth={row.minWidth || "8rem"}
                 >
                   {Array.isArray(cellData) ? (
                     <EyeColumnArrayShow EyeShow={EyeShow}>

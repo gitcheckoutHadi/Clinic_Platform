@@ -18,8 +18,8 @@ const Settings = () => {
         return <SettingTable />;
       case "ClinicProfileSettings":
         return <ClinicProfile />;
-      // case "Notifications":
-      //   return <SettingNotificationItem />;
+      case "Notifications":
+        return <SettingNotificationItem />;
       default:
         return <NormalFlex>No Content Available</NormalFlex>;
     }

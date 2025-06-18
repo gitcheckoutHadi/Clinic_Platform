@@ -11,7 +11,7 @@ const OrgBarChart = () => {
           { name: "cl3", data: [12, 17, 15, 24] },
         ]}
         categories={["OCC", "Zygotes", "Sperm", "Embryos"]}
-        title="Daily Gametes Renewals log"
+        title="Renewal Summary"
       />
     </>
   );

@@ -9,8 +9,8 @@ export const SettingViewModeData: TableHeaderDataInterface[] = [
     id: "ClinicProfileSettings",
     label: "Clinic Profile Settings",
   },
-  // {
-  //   id: "Notifications",
-  //   label: "Notifications",
-  // },
+  {
+    id: "Notifications",
+    label: "Notifications",
+  },
 ];

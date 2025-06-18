@@ -11,7 +11,7 @@ import {
   SvgSMS,
 } from "../../../elements/Icons";
 import { IntegrationDATA } from "../../dashboard/IntegrationDs/IntegrationDsData";
-import Metrics from "../Metrics/Metrics";
+
 import ClmChart from "../ClmChart/ClmChart";
 import OrgBarChart from "../OrgBarChart/OrgBarChart";
 import ClinicsPerformanceStats from "../ClinicsPerformanceStats/ClinicsPerformanceStats";
@@ -34,14 +34,13 @@ const Organization = () => {
   }));
   return (
     <PageFlex>
-      <Metrics />
-      <DashboardHeaderPart title="BOH Group Org View  " />
+      <DashboardHeaderPart title="LAU Group Org Chart  " />
       <ClinicsPerformanceStats />
       <NormalFlex>
         <FlexOneWidth>
           <ShadowBox>
             <Typography
-              text={"Interactions"}
+              text={"Click Data"}
               fontSize="1.125rem"
               fontWeight="700"
               lineHeight="120%"
@@ -59,7 +58,7 @@ const Organization = () => {
       <ShadowBox>
         <PageFlex>
           <Typography
-            text={"Interactions"}
+            text={"Clinic Data"}
             fontSize="1.125rem"
             fontWeight="700"
             lineHeight="120%"

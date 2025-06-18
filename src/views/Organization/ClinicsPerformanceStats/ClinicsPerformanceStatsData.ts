@@ -1,73 +1,73 @@
 export const ClinicsPerformanceStatsData = [
   {
-    title: "Clinics Overview",
-    titlebgcolor: "rgba(246, 160, 172, 0.20)",
+    title: "Clinics Stats",
+    titlebgcolor: "#FF6F6150",
     charts: [
-      { chartLabels: "Clinic 1", chartSeries: 44, chartColor: "#B771F2" },
-      { chartLabels: "Clinic 2", chartSeries: 23, chartColor: "#3FBEBC" },
-      { chartLabels: "Clinic 3", chartSeries: 45, chartColor: "#FFC7BB" },
+      { chartLabels: "Clinic 1", chartSeries: 44, chartColor: "#FF6F61" },
+      { chartLabels: "Clinic 2", chartSeries: 23, chartColor: "#00BFA6" },
+      { chartLabels: "Clinic 3", chartSeries: 45, chartColor: "#A15FE4" },
     ],
   },
   {
-    title: "Dental Clinics",
-    titlebgcolor: "rgba(160, 246, 172, 0.20)",
+    title: "Dental Stats",
+    titlebgcolor: "#00BFA680",
     charts: [
       {
         chartLabels: "Clinic A",
         chartSeries: 30,
-        chartColor: "#B771F2",
+        chartColor: "#FF6F61",
       },
       {
         chartLabels: "Clinic B",
         chartSeries: 65,
-        chartColor: "#3FBEBC",
+        chartColor: "#00BFA6",
       },
       {
         chartLabels: "Clinic C",
         chartSeries: 15,
-        chartColor: "#FFC7BB",
+        chartColor: "#A15FE4",
       },
     ],
   },
   {
-    title: "Pediatric Clinics",
-    titlebgcolor: "rgba(172, 160, 246, 0.20)",
+    title: "Pediatric Care",
+    titlebgcolor: "#F39C1280",
     charts: [
       {
         chartLabels: "Pediatric Clinic A",
         chartSeries: 60,
-        chartColor: "#B771F2",
+        chartColor: "#FF6F61",
       },
       {
         chartLabels: "Pediatric Clinic B",
         chartSeries: 20,
-        chartColor: "#3FBEBC",
+        chartColor: "#00BFA6",
       },
       {
         chartLabels: "Pediatric Clinic C",
         chartSeries: 34,
-        chartColor: "#FFC7BB",
+        chartColor: "#A15FE4",
       },
     ],
   },
   {
-    title: "Surgery Centers",
-    titlebgcolor: "rgba(255, 200, 100, 0.20)",
+    title: "Surgery Data",
+    titlebgcolor: "#5DADE2",
     charts: [
       {
         chartLabels: "Surgery Center A",
         chartSeries: 70,
-        chartColor: "#B771F2",
+        chartColor: "#FF6F61",
       },
       {
         chartLabels: "Surgery Center B",
         chartSeries: 20,
-        chartColor: "#3FBEBC",
+        chartColor: "#00BFA6",
       },
       {
         chartLabels: "Surgery Center C",
         chartSeries: 10,
-        chartColor: "#FFC7BB",
+        chartColor: "#A15FE4",
       },
     ],
   },

@@ -90,6 +90,8 @@ const PatientTable = () => {
     EmailAddress: patient.EmailAddress,
     Cycles: toArabicDigits(patient.Cycles),
     DueAmount: toArabicDigits(patient.DueAmount),
+    LastVisitDate: toArabicDigits(`${formatDate(patient.LastVisitDate)}`),
+    PrimaryPhysician: patient.PrimaryPhysician,
   }));
 
   console.log(formattedData);
@@ -105,12 +107,7 @@ const PatientTable = () => {
         SecondArrayText="File:"
         ExcelTableName="Patient"
         ResponsiveColumns={PatientResponsiveHeaderTableData}
-        // flexWidths={[1, 1, 1, 1, 1, 0.5, 0.7]}
         Action={DummyActions()}
-        // minWidth={["12rem", "12rem", "10rem", "12rem", "12rem", "6rem", "8rem"]}
-        // IndexShows={IndexShows}
-        // onFilterIndexClick={handleTagClick}
-        // RefreshClick={handleRefresh}
       />
 
       {popUpText === "hadi" && (

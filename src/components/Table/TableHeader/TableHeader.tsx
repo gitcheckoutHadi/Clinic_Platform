@@ -25,7 +25,7 @@ interface TableHeaderInterface {
   Action?: Action[];
   columnOrder: TableHeaderDataInterface[];
   setColumnOrder: React.Dispatch<SetStateAction<TableHeaderDataInterface[]>>;
-  columnWidths: string[];
+  // columnWidths: string[];
   handleMouseDown: any;
 }
 
@@ -40,7 +40,7 @@ const TableHeader = ({
   onSort,
   showExpand,
   Action,
-  columnWidths,
+  // columnWidths,
   handleMouseDown,
 }: TableHeaderInterface) => {
   const { t } = useTranslation();
@@ -83,7 +83,7 @@ const TableHeader = ({
           <TableHeaderCell
             key={col.id}
             flexWidth={flexWidths[colIndexInOriginal] || 1}
-            minWidth={columnWidths[colIndexInOriginal] || "9rem"}
+            // minWidth={columnWidths[colIndexInOriginal] || "30rem"}
             onClick={() => showExpand && onSort(colIndexInOriginal)}
             draggable
             onDragStart={() => handleDragStart(index)}

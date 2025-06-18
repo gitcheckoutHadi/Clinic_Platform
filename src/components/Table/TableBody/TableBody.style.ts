@@ -27,12 +27,12 @@ export const TableBodyRow = styled.div`
 
 export const TableRowCell = styled.div<{
   flexWidth: number;
-  minWidth: string;
+  minWidth?: string;
   EyeShow?: boolean;
 }>`
   display: flex;
   flex: ${({ flexWidth }) => flexWidth};
-  min-width: ${({ minWidth }) => minWidth};
+  min-width: ${({ minWidth }) => minWidth || "9rem"};
   padding: 0.75rem;
   gap: 0.5rem;
   justify-content: space-between;

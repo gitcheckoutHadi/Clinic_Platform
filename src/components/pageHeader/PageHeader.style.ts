@@ -6,16 +6,23 @@ interface PageheaderProps {
 
 export const PageHeaderStyle = styled.div`
   width: 100%;
-  height: 2.375rem;
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  /* background: red; */
   &:dir(ltr) {
-    padding: 2.5rem 0 1rem 0;
+    padding: 1.5rem 0 1rem 0;
   }
   &:dir(rtl) {
-    padding: 2.5rem 0 1em 0;
+    padding: 1.5rem 0 1em 0;
+  }
+  .logoImgS {
+    height: 150px;
+    /* max-height: 20px; */
+    width: auto;
+    object-fit: contain;
+    display: block;
   }
 `;
 export const RightHeaderStyle = styled.div`

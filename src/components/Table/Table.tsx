@@ -237,7 +237,7 @@ const Table = ({
               Action={Action}
               columnOrder={columnOrder}
               setColumnOrder={setColumnOrder}
-              columnWidths={columnWidths}
+              // columnWidths={columnWidths}
               handleMouseDown={handleMouseDown}
             />
 

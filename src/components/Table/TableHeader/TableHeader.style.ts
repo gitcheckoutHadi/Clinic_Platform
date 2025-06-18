@@ -26,11 +26,11 @@ export const ResizeHandle = styled.div`
 
 export const TableHeaderCell = styled.div<{
   flexWidth: number;
-  minWidth: string;
+  minWidth?: string;
 }>`
   display: flex;
   flex: ${({ flexWidth }) => flexWidth};
-  min-width: ${({ minWidth }) => minWidth};
+  min-width: ${({ minWidth }) => minWidth || "9rem"};
   padding: 0.8rem 0.75rem;
   gap: 0.5rem;
   justify-content: space-between;

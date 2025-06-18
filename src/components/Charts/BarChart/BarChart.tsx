@@ -51,7 +51,7 @@ const BarChart: React.FC<BarChartProps> = ({ series, categories, title }) => {
     title: {
       text: title ?? "Bar Chart",
     },
-    colors: ["#29ACAE", "#A15FE4", "#FFC7BB"],
+    colors: ["#29ACAE", "#A15FE4", "#FF6F61"],
     xaxis: {
       categories: categories,
       position: "top",
@@ -100,7 +100,7 @@ const BarChart: React.FC<BarChartProps> = ({ series, categories, title }) => {
         </TextHeaderBarChartInfo>
         <TextHeaderBarChartInfo>
           <MediumTypography
-            text={"Daily total gametes"}
+            text={"Total Gametes"}
             color="#898DDA"
             fontWeight="700"
           />

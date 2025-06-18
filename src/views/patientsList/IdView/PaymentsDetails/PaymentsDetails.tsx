@@ -41,7 +41,7 @@ const PaymentsDetails = ({
         showExpand={showExpand}
         setShowExpand={setShowExpand}
         ExpandClick={ExpandClick}
-        flexWidths={[1, 1, 0.6, 1.2]}
+        // flexWidths={[1, 1, 0.6, 1.2]}
         ExcelTableName="PaymentsHistory"
       />
     </PageFlex>

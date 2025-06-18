@@ -25,7 +25,7 @@ const ColumnChart: React.FC<ColumnChartProps> = ({ data }) => {
       type: "bar",
       height: 350,
     },
-    colors: ["#29ACAE", "#A15FE4", "#FFC7BB"],
+    colors: ["#29ACAE", "#A15FE4", "#FF6F61"],
     plotOptions: {
       bar: {
         horizontal: false,

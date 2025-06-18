@@ -14,8 +14,8 @@ export const Switch: FC<ToggleSwitchProps> = ({
   checked,
   onChange,
   size = "medium",
-  onColor = "#231d46",
-  offColor = "#ccc",
+  onColor = "#6A0DAD",
+  offColor = "#d6bcfa40",
   handleColor = "#fff",
 }) => {
   return (

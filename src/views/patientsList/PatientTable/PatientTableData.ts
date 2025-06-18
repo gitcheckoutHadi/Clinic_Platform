@@ -6,8 +6,9 @@ export const PatientHeaderTableData: TableHeaderDataInterface[] = [
   { id: "Nationality", label: "Nationality" },
   { id: "PhoneNumber", label: "Phone Number" },
   { id: "EmailAddress", label: "Email Address" },
-
   { id: "DueAmount", label: "Due Amount" },
+  { id: "LastVisitDate", label: "Last Visit Date" },
+  { id: "PrimaryPhysician", label: "Primary Physician" },
 ];
 
 export const PatientResponsiveHeaderTableData: TableHeaderDataInterface[] = [
@@ -25,8 +26,11 @@ export const PatientTableData = [
     Nationality: "USA",
     PhoneNumber: "+1 123-456-7890",
     EmailAddress: "sara@example.com",
-
     DueAmount: "150.75",
+
+    MedicalRecordNumber: "MRN-1001",
+    LastVisitDate: new Date(2024, 4, 12),
+    PrimaryPhysician: "Dr. James Carter",
   },
   {
     SourceId: "wqdewqedwqd",
@@ -36,8 +40,11 @@ export const PatientTableData = [
     Nationality: "Canada",
     PhoneNumber: "+1 987-654-3210",
     EmailAddress: "samah@example.com",
-
     DueAmount: "200.0",
+
+    MedicalRecordNumber: "MRN-1002",
+    LastVisitDate: new Date(2024, 3, 22),
+    PrimaryPhysician: "Dr. Emily Nguyen",
   },
   {
     SourceId: "qwdfegt55r4e3w",
@@ -47,8 +54,11 @@ export const PatientTableData = [
     Nationality: "Pakistan",
     PhoneNumber: "+92 300-1234567",
     EmailAddress: "amina@example.com",
-
     DueAmount: "75.5",
+
+    MedicalRecordNumber: "MRN-1003",
+    LastVisitDate: new Date(2024, 2, 18),
+    PrimaryPhysician: "Dr. Ahmed Khalil",
   },
   {
     SourceId: "wqrfewqa",
@@ -58,8 +68,11 @@ export const PatientTableData = [
     Nationality: "Mexico",
     PhoneNumber: "+52 55-9876-5432",
     EmailAddress: "afaf@example.com",
-
     DueAmount: "300.0",
+
+    MedicalRecordNumber: "MRN-1004",
+    LastVisitDate: new Date(2024, 5, 10),
+    PrimaryPhysician: "Dr. Maria Sanchez",
   },
   {
     SourceId: "ert3e3w2wsdef",
@@ -69,8 +82,11 @@ export const PatientTableData = [
     Nationality: "Ireland",
     PhoneNumber: "+353 85-678-9102",
     EmailAddress: "layla@example.com",
-
     DueAmount: "50.0",
+
+    MedicalRecordNumber: "MRN-1005",
+    LastVisitDate: new Date(2024, 1, 28),
+    PrimaryPhysician: "Dr. Sean O’Connor",
   },
   {
     SourceId: "edfgrtygwqwwwfr",
@@ -80,8 +96,9 @@ export const PatientTableData = [
     Nationality: "China",
     PhoneNumber: "+86 139-4567-8901",
     EmailAddress: "mariam@example.com",
-
     DueAmount: "500.0",
+    LastVisitDate: new Date(2024, 6, 5),
+    PrimaryPhysician: "Dr. Wei Zhang",
   },
   {
     SourceId: "edfgwqewqrt4rtygfr",
@@ -91,8 +108,9 @@ export const PatientTableData = [
     Nationality: "UAE",
     PhoneNumber: "+971 50-987-6543",
     EmailAddress: "fatima@example.com",
-
     DueAmount: "275.25",
+    LastVisitDate: new Date(2024, 3, 30),
+    PrimaryPhysician: "Dr. Omar Al-Hassan",
   },
   {
     SourceId: "edfgrtygferwedasdsdr",
@@ -102,8 +120,9 @@ export const PatientTableData = [
     Nationality: "Brazil",
     PhoneNumber: "+55 21-3456-7890",
     EmailAddress: "hana@example.com",
-
     DueAmount: "125.0",
+    LastVisitDate: new Date(2024, 5, 15),
+    PrimaryPhysician: "Dr. Carlos Silva",
   },
   {
     SourceId: "ewrdewerfwe",
@@ -113,8 +132,9 @@ export const PatientTableData = [
     Nationality: "Germany",
     PhoneNumber: "+49 170-123-4567",
     EmailAddress: "noor@example.com",
-
     DueAmount: "180.0",
+    LastVisitDate: new Date(2024, 4, 20),
+    PrimaryPhysician: "Dr. Anna Müller",
   },
   {
     SourceId: "asdfghy6trew",
@@ -124,8 +144,9 @@ export const PatientTableData = [
     Nationality: "Egypt",
     PhoneNumber: "+20 100-234-5678",
     EmailAddress: "rania@example.com",
-
     DueAmount: "220.0",
+    LastVisitDate: new Date(2024, 6, 3),
+    PrimaryPhysician: "Dr. Youssef Amin",
   },
   {
     SourceId: "wsefgbhytgfrde",
@@ -137,6 +158,8 @@ export const PatientTableData = [
     EmailAddress: "zainab@example.com",
     Cycles: "3",
     DueAmount: "190.5",
+    LastVisitDate: new Date(2024, 3, 5),
+    PrimaryPhysician: "Dr. Giovanni Rossi",
   },
   {
     SourceId: "asdcfvbjh6ygt",
@@ -148,6 +171,8 @@ export const PatientTableData = [
     EmailAddress: "salma@example.com",
     Cycles: "6",
     DueAmount: "350.0",
+    LastVisitDate: new Date(2024, 5, 25),
+    PrimaryPhysician: "Dr. Oliver Smith",
   },
   {
     SourceId: "frgethy6tr",
@@ -159,6 +184,8 @@ export const PatientTableData = [
     EmailAddress: "aya@example.com",
     Cycles: "2",
     DueAmount: "160.75",
+    LastVisitDate: new Date(2024, 4, 8),
+    PrimaryPhysician: "Dr. Kenji Tanaka",
   },
   {
     SourceId: "safgrfedws",
@@ -170,6 +197,8 @@ export const PatientTableData = [
     EmailAddress: "elham@example.com",
     Cycles: "4",
     DueAmount: "295.0",
+    LastVisitDate: new Date(2024, 6, 1),
+    PrimaryPhysician: "Dr. Ivan Petrov",
   },
   {
     SourceId: "dscvbhgf",
@@ -181,5 +210,7 @@ export const PatientTableData = [
     EmailAddress: "nadia@example.com",
     Cycles: "5",
     DueAmount: "210.0",
+    LastVisitDate: new Date(2024, 2, 28),
+    PrimaryPhysician: "Dr. Mamadou Diop",
   },
 ];

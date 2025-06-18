@@ -9,19 +9,19 @@ import {
   MainLoginContainer,
   QuarterLoginContainer,
 } from "./Login.style";
-import { SvgGrayLogo, SvgLogoWithText } from "../../elements/Icons";
+import { SvgGrayLogo } from "../../elements/Icons";
 import LoginForm from "./LoginForm/LoginForm";
 import FullHeightShape from "../../components/Shape/Shape";
+import { LogoPic } from "../../constants/Pics/Pics";
 
 const Login = () => {
   return (
     <MainLoginContainer>
       <QuarterLoginContainer>
-        <SvgLogoWithText className="styled-SVG" />
         <div className="styled-text">
-          <span>Best IVF</span>
-          <span></span>
-          <span>Controller.</span>
+          {" "}
+          <span>Clinic Admin</span>
+          <span>Panel.</span>
         </div>
         <ABSLine />
         <ABSWidthLine />
@@ -42,7 +42,7 @@ const Login = () => {
       </QuarterLoginContainer>
 
       <AbsoluteLoginLogo>
-        <SvgGrayLogo />
+        <img src={LogoPic} alt="LogoPic" className="LoginlogoImgS" />
       </AbsoluteLoginLogo>
     </MainLoginContainer>
   );
