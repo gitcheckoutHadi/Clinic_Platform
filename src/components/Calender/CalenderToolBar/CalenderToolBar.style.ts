@@ -56,7 +56,7 @@ export const CalenderToolBarDayPagination = styled.div`
     background-color: transparent; /* Optional, for removing background */
     cursor: pointer;
     border-radius: 6.25rem;
-    background: var(--dark-blue, #231d46);
+    background: var(--dark-blue,#690dac);
     color: #fff;
     padding: 0.25rem 1.25rem;
     font-size: 0.875rem;
@@ -69,7 +69,7 @@ export const CalenderToolBarDayPagination = styled.div`
     }
 
     &:active {
-      background-color: #e0e0e0; /* Optional active effect */
+      background-color: #e0e0e0; 
     }
   }
 `;

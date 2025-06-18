@@ -10,7 +10,7 @@ export const ItemSettingViewModeItem = styled.div<Styles>`
   padding: 0 0.3rem;
   justify-content: center;
   align-items: center;
-  color: ${(props) => (props.active ? "#898DDA" : "rgba(171, 174, 229, 0.70)")};
+  color: ${(props) => (props.active ? "#7724c3" : "rgba(171, 174, 229, 0.70)")};
   cursor: pointer;
   border-radius: 0.9375rem;
   transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
@@ -18,7 +18,7 @@ export const ItemSettingViewModeItem = styled.div<Styles>`
   &:hover {
     padding: 0 0.4rem;
     color: ${(props) =>
-      props.active ? "#A6A9FF" : "#6A6DC7"}; /* Brighter text */
+    props.active ? "#A6A9FF" : "#6A6DC7"}; /* Brighter text */
 
     transform: scale(1.05); /* Subtle zoom effect */
   }

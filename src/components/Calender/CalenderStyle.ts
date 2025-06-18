@@ -349,7 +349,7 @@ export const TodayHeaderMainCony = styled.div`
   align-items: center;
   gap: 0.625rem;
   border-radius: 6.25rem;
-  background: var(--dark, #231d46);
+  background: var(--dark, #690dac);
   width: 3.5rem;
   margin: auto;
 `;
