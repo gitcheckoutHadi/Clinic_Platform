@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@jridgewell/sourcemap-codec": "^1.5.0",
     "axios": "^1.8.2",
     "cra-template-typescript": "1.2.0",
     "date-fns": "^4.1.0",
@@ -20,7 +21,9 @@
     "react-select": "^5.9.0",
     "react-select-country-list": "^2.2.3",
     "recoil": "^0.7.7",
+    "rimraf": "^6.0.1",
     "styled-components": "^6.1.13",
+    "terser": "^5.43.0",
     "web-vitals": "^4.2.4",
     "xlsx": "^0.18.5"
   },
@@ -51,6 +54,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@rollup/plugin-terser": "^0.4.4",
     "@testing-library/react": "^16.1.0",
     "@types/react": "^19.0.1",
     "@types/react-big-calendar": "^1.16.0",
