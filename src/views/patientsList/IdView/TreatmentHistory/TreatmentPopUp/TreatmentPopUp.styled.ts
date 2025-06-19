@@ -19,7 +19,7 @@ export const TreatmentPopUpTableHeader = styled.div`
   align-items: center;
   align-self: stretch;
   border-radius: 0.3125rem;
-  background: rgba(171, 174, 229, 0.1);
+  background: #d6bcfa;
 `;
 export const TreatmentPopUpTableCell = styled.div`
   display: flex;
@@ -54,5 +54,9 @@ export const TreatmentPopUpBodyRow = styled.div`
   flex: 1;
   padding: 0.625rem 1.25rem;
   align-items: center;
+  border-radius: 0.3125rem;
   /* align-self: stretch; */
+  &:nth-child(even) {
+    background: rgba(214, 188, 250, 0.25);
+  }
 `;

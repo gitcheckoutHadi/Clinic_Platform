@@ -27,6 +27,8 @@ interface TableHeaderInterface {
   setColumnOrder: React.Dispatch<SetStateAction<TableHeaderDataInterface[]>>;
   // columnWidths: string[];
   handleMouseDown: any;
+  hoveredColumnIndex: number | null;
+  setHoveredColumnIndex: React.Dispatch<SetStateAction<number | null>>;
 }
 
 const TableHeader = ({
@@ -42,6 +44,7 @@ const TableHeader = ({
   Action,
   // columnWidths,
   handleMouseDown,
+  setHoveredColumnIndex,
 }: TableHeaderInterface) => {
   const { t } = useTranslation();
   const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
@@ -74,11 +77,13 @@ const TableHeader = ({
     setColumnOrder(newOrder);
     setDraggedIndex(null);
   };
-
+  useEffect(() => {}, [columnOrder]);
   return (
     <TableHeaderRow>
       {columnOrder.map((col, index) => {
-        const colIndexInOriginal = columns.findIndex((c) => c.id === col.id);
+        const colIndexInOriginal = columnOrder.findIndex(
+          (c) => c.id === col.id
+        );
         return (
           <TableHeaderCell
             key={col.id}
@@ -90,9 +95,11 @@ const TableHeader = ({
             onDragOver={(e) => handleDragOver(e, index)}
             onDrop={() => handleDrop(index)}
             style={{
-              cursor: index > 0 ? "move" : "default",
-              // opacity: draggedIndex === index ? 0.5 : 1,
+              cursor: columnOrder.length > 2 && index > 0 ? "move" : "default",
+              opacity: draggedIndex === index ? 0.5 : 1,
             }}
+            onMouseEnter={() => setHoveredColumnIndex(colIndexInOriginal)}
+            onMouseLeave={() => setHoveredColumnIndex(null)}
           >
             <MediumTypography
               text={t(col.label)}

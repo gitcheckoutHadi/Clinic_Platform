@@ -35,7 +35,7 @@ const FilterTag = ({
         cursor="pointer"
       />
       <MediumTypography
-        text={`${filteredText}`}
+        text={filteredText || ""}
         fontSize="0.875rem"
         color="inherit"
         fontWeight="400" ///don't change

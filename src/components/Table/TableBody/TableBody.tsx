@@ -49,6 +49,7 @@ interface TableBodyInterface {
   IdLoading?: string;
   columnWidths: string[];
   handleMouseDown: any;
+  hoveredColumnIndex: number | null;
 }
 
 const TableBody = ({
@@ -69,6 +70,7 @@ const TableBody = ({
   IdLoading,
   columnWidths,
   handleMouseDown,
+  hoveredColumnIndex,
 }: TableBodyInterface) => {
   // State to track the currently active row for the action menu
   const { t } = useTranslation();
@@ -76,6 +78,7 @@ const TableBody = ({
   const [ViewSourceIDPopUp, setViewSourceIDPopUp] = useState<boolean>(false);
   const [ObjectId, setObjectId] = useState<number | null>(null);
   const [ShowDeletePopUp, setShowDeletePopUp] = useState<boolean>(false);
+
   const toggleActionMenu = (index: number) => {
     setActiveRowIndex((prevIndex) => (prevIndex === index ? null : index));
   };
@@ -123,6 +126,7 @@ const TableBody = ({
               const colIndexInOriginal = columns.findIndex(
                 (c) => c.id === column.id
               );
+              const isHoveredColumn = colIndexInOriginal === hoveredColumnIndex;
 
               return (
                 <TableRowCell
@@ -132,6 +136,7 @@ const TableBody = ({
                   // EyeShow={EyeShow}
                   flexWidth={row.flex || 1}
                   // minWidth={row.minWidth || "8rem"}
+                  HoveredColumn={isHoveredColumn}
                 >
                   {Array.isArray(cellData) ? (
                     <EyeColumnArrayShow EyeShow={EyeShow}>

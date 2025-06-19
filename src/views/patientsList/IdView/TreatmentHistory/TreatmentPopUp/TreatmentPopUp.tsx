@@ -25,7 +25,7 @@ const TreatmentPopUp = ({ SourceId }: TreatmentPopUpInterface) => {
               <TreatmentPopUpTableCell key={item.id}>
                 <MediumTypography
                   text={item.label}
-                  color="#898DDA"
+                  color="#7E22CE"
                   wordWrap="normal"
                 />
               </TreatmentPopUpTableCell>

@@ -89,6 +89,9 @@ const Table = ({
   const [columnOrder, setColumnOrder] = useState<TableHeaderDataInterface[]>(
     isMobile ? ResponsiveColumns ?? columns : columns
   );
+  const [hoveredColumnIndex, setHoveredColumnIndex] = useState<number | null>(
+    null
+  );
 
   // Filter rows based on the search text
   const [columnWidths, setColumnWidths] = useState<string[]>(
@@ -163,7 +166,7 @@ const Table = ({
   };
 
   // Map indices to the corresponding column keys (if `IndexShows` is provided)
-  const DataKeys = IndexShows && IndexShows.map((index) => columnOrder[index]);
+  const DataKeys = IndexShows && IndexShows.map((index) => columns[index]);
   console.log("DataKeys are", DataKeys);
   useEffect(() => {
     setCurrentPage(1);
@@ -247,6 +250,8 @@ const Table = ({
               setColumnOrder={setColumnOrder}
               // columnWidths={columnWidths}
               handleMouseDown={handleMouseDown}
+              hoveredColumnIndex={hoveredColumnIndex}
+              setHoveredColumnIndex={setHoveredColumnIndex}
             />
 
             {/* Table body displaying rows with optional delete functionality */}
@@ -267,6 +272,7 @@ const Table = ({
               IdLoading={IdLoading}
               columnWidths={columnWidths}
               handleMouseDown={handleMouseDown}
+              hoveredColumnIndex={hoveredColumnIndex}
             />
           </ContainerTable>
         }

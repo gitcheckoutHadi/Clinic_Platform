@@ -9,9 +9,9 @@ export const ExcelDownload = (data: any[], tableName: string, t: any) => {
 
       if (Array.isArray(row[key])) {
         // Convert array values to a comma-separated string
-        processedRow[t(`table.${key}`)] = row[key].join(", ");
+        processedRow[t(`${key}`)] = row[key].join(", ");
       } else {
-        processedRow[t(`table.${key}`)] = t(row[key]);
+        processedRow[t(`${key}`)] = t(row[key]);
       }
     }
     return processedRow;
@@ -21,7 +21,7 @@ export const ExcelDownload = (data: any[], tableName: string, t: any) => {
   const translatedHeaders: Record<string, string> = Object.keys(data[0] || {})
     .filter((key) => key !== "flex" && key !== "minWidth")
     .reduce((acc, key) => {
-      acc[t(`table.${key}`)] = key;
+      acc[t(`${key}`)] = key;
       return acc;
     }, {} as Record<string, string>);
 

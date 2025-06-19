@@ -1,6 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import { ResizeHandle } from "../TableHeader/TableHeader.style";
-
+const flyTop = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 export const TableBodyColumnRender = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,6 +38,7 @@ export const TableRowCell = styled.div<{
   flexWidth: number;
   minWidth?: string;
   EyeShow?: boolean;
+  HoveredColumn: boolean;
 }>`
   display: flex;
   flex: ${({ flexWidth }) => flexWidth};
@@ -41,6 +51,15 @@ export const TableRowCell = styled.div<{
   position: relative;
   border-right: 1px solid transparent;
   /* background: green; */
+  background-color: ${({ HoveredColumn }) =>
+    HoveredColumn ? "#d6bcfa80" : "transparent"};
+
+  ${({ HoveredColumn }) =>
+    HoveredColumn &&
+    css`
+      animation: ${flyTop} 0.7s ease forwards;
+    `}
+
   &:first-child {
     font-size: 0.875rem;
     font-style: normal;

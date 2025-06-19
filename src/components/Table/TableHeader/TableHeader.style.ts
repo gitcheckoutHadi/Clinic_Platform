@@ -44,6 +44,9 @@ export const TableHeaderCell = styled.div<{
       display: block;
     }
   } */
+  &:hover {
+    background: #d6bcfa80;
+  }
 `;
 
 export const TableCellArray = styled.div`
