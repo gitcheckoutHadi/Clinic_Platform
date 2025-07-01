@@ -83,15 +83,7 @@ export const ReminderBtnCell = styled.div`
   gap: 0.375rem;
   align-self: stretch;
   border-radius: 6.25rem;
-  background: var(--dark-blue, #231d46);
+  /* background: var(--dark-blue, #231d46); */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
-
-  &:hover {
-    background: var(
-      --hover-dark-blue,
-      #2c2554
-    ); /* Change the background color on hover */
-    transform: scale(1.05); /* Slightly enlarge the button */
-  }
 `;

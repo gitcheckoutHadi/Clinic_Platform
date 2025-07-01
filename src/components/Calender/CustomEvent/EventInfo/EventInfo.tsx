@@ -28,6 +28,7 @@ import {
 import { StartEndTime } from "../../../../utils/StartEndTime";
 import MappedIndexClickOutSide from "../../../../hooks/MapedIndexClickOutSide";
 import { CalendarEvent } from "../../CalenderInterface";
+import ReminderButton from "../../../../elements/Buttons/ReminderButton/ReminderButton";
 
 interface EventInfoInterface extends CustomEventProps {
   position: { top: number; left: number } | null;
@@ -108,19 +109,14 @@ const EventInfo: React.FC<EventInfoInterface> = ({
         </EventInfoRow>
         {data.Note && (
           <EventReasonContainer>
-            <MediumTypography text={"Note"} color="#898DDA" fontWeight="700" />
+            <MediumTypography text={"Note"} color="#7E22CE" fontWeight="700" />
             <MediumTypography text={data.Note} color="#a6a6a6" />
           </EventReasonContainer>
         )}
         {/* Add more event details here */}
         {!data.done ? (
           <ReminderBtnCell>
-            <MediumTypography
-              fontSize="0.875rem"
-              text={"Send reminder"}
-              fontWeight="700"
-              color="#fff"
-            />
+            <ReminderButton />
           </ReminderBtnCell>
         ) : (
           <></>
