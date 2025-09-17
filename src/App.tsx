@@ -78,6 +78,7 @@ function App() {
         <I18nextProvider i18n={i18n}>
           <Routes>
             <Route element={<OriginalLayout />}>
+              <Route path="/" element={<Dashboard />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/PatientsList" element={<PatientsList />} />
               <Route path="/PatientsList/AddPatient" element={<AddPatient />} />
@@ -111,7 +112,7 @@ function App() {
             </Route>
             <Route element={<SignUpLayout />}></Route>
             <Route path="/Login" element={<Login />} />
-            <Route path="/" element={<Dashboard />} />
+
             {/* <Route path="signUpProgress" element={<SignUpProgress/>}/> */}
           </Routes>
         </I18nextProvider>
