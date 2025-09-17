@@ -111,7 +111,7 @@ function App() {
             </Route>
             <Route element={<SignUpLayout />}></Route>
             <Route path="/Login" element={<Login />} />
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Dashboard />} />
             {/* <Route path="signUpProgress" element={<SignUpProgress/>}/> */}
           </Routes>
         </I18nextProvider>

@@ -46,6 +46,7 @@ interface TableInterface {
   IdLoading?: any;
   ResponsiveColumns?: TableHeaderDataInterface[];
   TextFilterShows?: InterfaceTextFilterShow[];
+  fetchesURL?: string;
 }
 
 const Table = ({
@@ -74,6 +75,7 @@ const Table = ({
   IdLoading,
   ResponsiveColumns,
   TextFilterShows,
+  fetchesURL,
 }: TableInterface) => {
   const { t } = useTranslation();
   const breakpoint = 800; // You can make this a prop too
@@ -92,7 +94,25 @@ const Table = ({
   const [hoveredColumnIndex, setHoveredColumnIndex] = useState<number | null>(
     null
   );
+  // const [FetchesData, setFetchesData] = useState<any>([]);
 
+  const [fetchesData, setFetchesData] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      if (!fetchesURL) return;
+
+      try {
+        const res = await fetch(fetchesURL);
+        const data = await res.json();
+        setFetchesData(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, [fetchesURL]);
   // Filter rows based on the search text
   const [columnWidths, setColumnWidths] = useState<string[]>(
     minWidth.length > 0 ? [...minWidth] : columnOrder.map(() => "8rem")
