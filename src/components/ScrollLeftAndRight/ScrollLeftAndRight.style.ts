@@ -23,6 +23,7 @@ export const ScrollLeftAndRightContainer = styled.div<ScrollLeftAndRightLineInte
   overflow-x: hidden;
   position: relative;
   padding-bottom: 1.5rem;
+
   width: ${(props) => props.BigContainerWidth || "100%"};
   /* @media (max-width: ${breakpoints.tablets}) { } */
   @media (max-width: calc(${breakpoints.small} + ${({ SmallAdditionalValue }) =>
@@ -43,6 +44,7 @@ export const ScrollLeftAndRightBody = styled.div`
   overflow-x: auto;
   overflow-y: auto;
   scroll-behavior: smooth;
+
   &::-webkit-scrollbar {
     display: none;
   }

@@ -53,7 +53,7 @@ const TreatmentHistory = ({
         />
       )}
       <Table
-        TableTitle={showExpand ? "Treatment Details" : "Treatment History"}
+        TableTitle={showExpand ? "Treatment Details" : "Treatment Historyddd"}
         columns={TreatmentHistoryColumnData}
         rows={filteredData}
         showExpand={showExpand}

@@ -8,6 +8,7 @@ export const TableHeaderRow = styled.div`
   min-width: 100%;
   width: fit-content;
   position: relative;
+  padding: 0.8rem 0;
 
   /* gap: 1rem; */
 `;
@@ -31,11 +32,11 @@ export const TableHeaderCell = styled.div<{
   display: flex;
   flex: ${({ flexWidth }) => flexWidth};
   min-width: ${({ minWidth }) => minWidth || "9rem"};
-  padding: 0.8rem 0.75rem;
+  padding: 0 0.75rem;
   gap: 0.5rem;
   justify-content: space-between;
   position: relative;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: background-color 0.2s ease;
   /* border-right: 1px solid transparent; */
   /* background: red; */
   /* &:hover {
@@ -46,6 +47,7 @@ export const TableHeaderCell = styled.div<{
   } */
   &:hover {
     background: #d6bcfa80;
+    /* padding: 0.8rem 0.75rem 0 0.75rem; */
   }
 `;
 

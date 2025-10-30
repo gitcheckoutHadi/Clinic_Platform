@@ -3,7 +3,7 @@ import { ResizeHandle } from "../TableHeader/TableHeader.style";
 const flyTop = keyframes`
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-0.3px);
   }
   to {
     opacity: 1;

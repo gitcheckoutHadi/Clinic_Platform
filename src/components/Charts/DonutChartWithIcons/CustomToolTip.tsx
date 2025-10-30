@@ -4,10 +4,10 @@ import { MediumTypography } from "../../../elements/textElement/fonts/Fonts";
 
 const CustomToolTipMainContainer = styled.div<{ background: string }>`
   width: 8rem;
-  height: 2.5rem;
+  height: 3rem;
   display: flex;
   gap: 0.62rem;
-  padding: 0.82rem 0.62rem;
+  padding: 0.62rem 0.62rem;
   align-items: center;
 
   /* svg {
